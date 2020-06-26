@@ -1,0 +1,31 @@
+body{
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  background-color: black;
+  bottom:0; left:0; right:0;
+}
+#tuto{
+  background-color: greenyellow;
+  display: none;
+  position: fixed;
+  top:0; left:0; right: 0; bottom: 0;
+  z-index: 1000;
+
+}
+
+#tuto.visible{
+  display: block;
+}
+
+.layout-mode nav,
+.layout-mode #tuto,
+.bindery-mode nav,
+.bindery-mode #tuto { display: none;}
+
+@media print {
+  nav,
+  #tuto {display: none !important;}
+}
