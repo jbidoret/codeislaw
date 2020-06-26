@@ -42,10 +42,6 @@ function bind(){
 }
 
 
-// if(document.body.classList.contains('layout-mode')){
-//   prepareCss();
-// }
-
 
 var bind_button = document.querySelector('#bind-button');
 var print_button = document.querySelector('#print-button');
@@ -57,6 +53,13 @@ function prepareCss(){
   if(screen_css) screen_css.parentElement.removeChild(screen_css);
   if(bind_css) bind_css.removeAttribute('media');
 }
+
+
+if(document.body.classList.contains('layout-mode')){
+  prepareCss();
+  bind();
+}
+
 
 bind_button.addEventListener('click', function(){
   // display tuto
