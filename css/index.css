@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Sprat";
+  src: url("fonts/Sprat_Variable.woff2") format("woff2 supports variations"), 
+       url("fonts/Sprat_Variable.woff2") format("woff2-variations");
+  font-style: normal;
+  font-weight: 100 200;
+}
+
+* {
+  box-sizing: border-box;
+}
+html, body { height: 100%; }
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  font-size: 2rem;
+  font-family: "Sprat";
+  font-weight: 100;
+  font-variant-ligatures: common-ligatures discretionary-ligatures;
+  font-variant-numeric: oldstyle-nums;
+  font-variation-settings: 'wdth' 100; 
+  text-align: center;
+}
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 100;
+  font-variation-settings: 'wdth' 115;
+  font-size: 1em;
+}
+h1 { font-size: calc(4vw + 1rem); font-variation-settings: 'wdth' 200; text-transform: uppercase;}
+h2 { font-variation-settings: 'wdth' 150; }
+h3 { font-variation-settings: 'wdth' 100;}
+p { 
+}
+header{
+  margin-bottom: 1em;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li a { text-decoration: none;}
